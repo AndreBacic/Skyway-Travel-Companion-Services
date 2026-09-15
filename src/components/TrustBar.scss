@@ -1,0 +1,27 @@
+@use "../styles/tokens" as *;
+.trustbar {
+  background: $navy-800;
+  padding: 1.15rem 0;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem clamp(1.5rem, 6vw, 4rem);
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    svg {
+      flex: none;
+    }
+  }
+}

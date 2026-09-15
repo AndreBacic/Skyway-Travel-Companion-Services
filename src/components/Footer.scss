@@ -1,0 +1,99 @@
+@use "../styles/tokens" as *;
+.footer {
+  background: $navy-900;
+  color: rgba(255, 255, 255, 0.78);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: 2.5rem;
+    padding: 3.2rem 0 2.4rem;
+  }
+
+  &__brand {
+    display: flex;
+    gap: 0.95rem;
+    align-items: flex-start;
+  }
+
+  &__name {
+    font-family: $font-display;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+
+    span {
+      display: block;
+      font-family: $font-body;
+      font-size: 0.58rem;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: $gold-400;
+      margin-top: 3px;
+    }
+  }
+
+  &__tagline {
+    margin-top: 0.7rem;
+    font-size: 0.92rem;
+    max-width: 34ch;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    font-size: 0.95rem;
+
+    a {
+      color: rgba(255, 255, 255, 0.85);
+      transition: color 0.15s ease;
+
+      &:hover {
+        color: $gold-400;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    font-size: 0.95rem;
+
+    a {
+      color: rgba(255, 255, 255, 0.85);
+      transition: color 0.15s ease;
+
+      &:hover {
+        color: $gold-400;
+      }
+    }
+  }
+
+  &__legal {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1.3rem 0 1.6rem;
+    font-size: 0.82rem;
+
+    p {
+      + p {
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  &__disclaimer {
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  @media (max-width: 800px) {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding-top: 2.6rem;
+    }
+  }
+}
