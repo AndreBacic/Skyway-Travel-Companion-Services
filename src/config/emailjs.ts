@@ -10,6 +10,6 @@
  *       {{ travel_date }}, {{ message }}
  *   - EMAILJS_PUBLIC_KEY → Public Key (32-character key)
  */
-export const EMAILJS_SERVICE_ID = "service_stcs_placeholder";
-export const EMAILJS_TEMPLATE_ID = "template_stcs_placeholder";
-export const EMAILJS_PUBLIC_KEY = "stcs-placeholder-public-key-0000";
+export const EMAILJS_SERVICE_ID = "contact_service_1";
+export const EMAILJS_TEMPLATE_ID = "template_vaj7gxs";
+export const EMAILJS_PUBLIC_KEY = "user_kLD9Htlm8es9VOz1mgyWD";
