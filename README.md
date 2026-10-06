@@ -22,30 +22,6 @@ npm run build      # type-check + production build into dist/
 npm run preview    # serve the production build
 ```
 
-## Wiring up the contact form (required)
-
-The form currently ships with **placeholder** EmailJS credentials. To make it
-send real mail:
-
-1. Create a free account at <https://www.emailjs.com>.
-2. Add an **email service** (e.g. Gmail via `SkywayTravelCompanion@gmail.com`).
-3. Create a **template** for the contact form and use these variables
-   (they match the form field names in `src/components/Contact.tsx`):
-
-   | Variable           | Meaning                          |
-   | ------------------ | -------------------------------- |
-   | `{{ from_name }}`  | sender name                      |
-   | `{{ reply_to }}`   | sender email address             |
-   | `{{ phone }}`      | sender phone (optional)          |
-   | `{{ service_needed }}` | type of travel               |
-   | `{{ travel_date }}`| desired travel date (optional)   |
-   | `{{ message }}`    | trip details                     |
-
-4. Paste your real values into `src/config/emailjs.ts`:
-   `EMAILJS_SERVICE_ID`, `EMAILJS_TEMPLATE_ID`, `EMAILJS_PUBLIC_KEY`.
-5. Until then, submissions show a graceful error and point visitors to the
-   phone number / email address.
-
 ## Structure
 
 ```
